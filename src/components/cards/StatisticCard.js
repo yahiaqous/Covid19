@@ -10,7 +10,6 @@ export default function StatisticCard(props) {
       style={{
         backgroundColor: '#04061c',
         borderWidth: '5px',
-        textAlign: 'center',
         margin: '20px',
       }}>
       <Card.Body>

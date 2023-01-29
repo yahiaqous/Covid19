@@ -9,18 +9,18 @@ export default function StatisticsRow(props) {
   const cardsData = [
     {
       title: 'TOTAL CASES',
-      value1: 677962644,
-      value2: 132337,
+      value1: props.data.TotalConfirmed,
+      value2: props.data.NewConfirmed,
     },
     {
       title: 'TOTAL DEATHS',
-      value1: 6744509,
-      value2: 594,
+      value1: props.data.TotalDeaths,
+      value2: props.data.NewDeaths,
     },
     {
       title: 'TOTAL RECOVERED',
-      value1: 0,
-      value2: 0,
+      value1: props.data.TotalRecovered,
+      value2: props.data.NewRecovered,
     },
   ];
 

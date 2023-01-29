@@ -6,7 +6,12 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
+    <div
+      style={{
+        minHeight: '100vh',
+        backgroundColor: '#04061c',
+        color: 'white',
+      }}>
       {/* Header */}
       <Header />
 
@@ -15,7 +20,7 @@ function App() {
 
       {/* Footer */}
       <Footer />
-    </>
+    </div>
   );
 }
 

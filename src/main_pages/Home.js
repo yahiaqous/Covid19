@@ -20,7 +20,7 @@ export default function Home() {
 
       let countriesDictionary = {};
       res.data.Countries.map((country) => {
-        countriesDictionary[country.Country] = country;
+        countriesDictionary[country.CountryCode] = country;
       });
       setAllCountriesData(countriesDictionary);
     });
@@ -34,7 +34,7 @@ export default function Home() {
   function getUserCountryFromDeviceIP() {
     // https://codesandbox.io/s/50bi9?file=/src/App.js
     AxiosInstance.get('https://ipapi.co/json').then((res) => {
-      let userCountry = res.data.country_name;
+      let userCountry = res.data.country;
       setSelectedCountryData(allCountriesData[userCountry]);
     });
   }

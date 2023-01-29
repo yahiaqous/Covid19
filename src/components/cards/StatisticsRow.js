@@ -9,24 +9,24 @@ export default function StatisticsRow(props) {
   const cardsData = [
     {
       title: 'TOTAL CASES',
-      value1: props.data.TotalConfirmed,
-      value2: props.data.NewConfirmed,
+      value1: props.data?.TotalConfirmed,
+      value2: props.data?.NewConfirmed,
     },
     {
       title: 'TOTAL DEATHS',
-      value1: props.data.TotalDeaths,
-      value2: props.data.NewDeaths,
+      value1: props.data?.TotalDeaths,
+      value2: props.data?.NewDeaths,
     },
     {
       title: 'TOTAL RECOVERED',
-      value1: props.data.TotalRecovered,
-      value2: props.data.NewRecovered,
+      value1: props.data?.TotalRecovered,
+      value2: props.data?.NewRecovered,
     },
   ];
 
   return (
-    <Row style={{ margin: '0 40px 0 40px', textAlign: 'center' }}>
-      <h1 style={{ fontWeight: 'bold' }}>{props.title}</h1>
+    <Row style={{ margin: '0 40px 0 40px' }}>
+      <h1 style={{ fontWeight: 'bold' }}>{props.title?.toUpperCase()}</h1>
 
       {cardsData.map((item, key) => (
         <Col key={key}>

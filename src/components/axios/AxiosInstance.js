@@ -2,11 +2,11 @@
 
 import axios from 'axios';
 
-const baseURL = 'https://api.covid19api.com';
+// const baseURL = '';
 
 // Create a new axios instance
 const AxiosInstance = axios.create({
-  baseURL: baseURL,
+  // baseURL: baseURL,
   headers: {
     'Content-Type': 'application/json',
     accept: 'application/json',

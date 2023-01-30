@@ -9,8 +9,10 @@ import AxiosInstance from '../components/axios/AxiosInstance';
 import Banner from '../components/Banner';
 import StatisticsRow from '../components/cards/StatisticsRow';
 import OtherCountriesCarousel from '../components/carousels/OtherCountriesCarousel';
+import OtherCountriesTable from '../components/tables/OtherCountriesTable';
 
 import CoronaMaskGIF from '../media/CoronaMaskGIF.gif';
+import CoronaVirusGIF from '../media/CoronaVirusGIF.gif';
 
 export default function Home() {
   useEffect(() => {
@@ -80,7 +82,10 @@ export default function Home() {
       </div>
 
       {/* Mask GIF */}
-      <img alt='Virus Mask GIF' src={CoronaMaskGIF}></img>
+      <img
+        alt='Virus Mask GIF'
+        src={CoronaMaskGIF}
+        style={{ height: '400px' }}></img>
 
       {/* Your Country */}
       <div style={{ margin: '120px 0 60px 0' }}>
@@ -105,6 +110,17 @@ export default function Home() {
         <OtherCountriesCarousel
           allCountriesDataSorted={allCountriesDataSorted}
         />
+      </div>
+
+      {/* Virus GIF */}
+      <img
+        alt='Virus GIF'
+        src={CoronaVirusGIF}
+        style={{ height: '400px' }}></img>
+
+      {/* Countries Table */}
+      <div style={{ padding: '0', margin: '120px 60px 0 60px' }}>
+        <OtherCountriesTable allCountriesDataSorted={allCountriesDataSorted} />
       </div>
     </div>
   );

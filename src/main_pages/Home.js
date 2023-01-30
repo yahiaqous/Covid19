@@ -3,9 +3,12 @@
 /* eslint-disable array-callback-return */
 
 import { useState, useEffect } from 'react';
+
 import AxiosInstance from '../components/axios/AxiosInstance';
 import Banner from '../components/Banner';
 import StatisticsRow from '../components/cards/StatisticsRow';
+
+import CoronaMaskGIF from '../media/CoronaMaskGIF.gif';
 
 export default function Home() {
   useEffect(() => {
@@ -45,18 +48,19 @@ export default function Home() {
       <Banner />
 
       {/* Global Statistics */}
-      <div style={{ marginTop: '120px' }}>
+      <div style={{ margin: '120px 0 60px 0' }}>
         <StatisticsRow title='GLOBAL STATISTICS' data={globalData} />
       </div>
 
+      <img alt='Virus Mask GIF' src={CoronaMaskGIF} style={{}}></img>
+
       {/* Your Country */}
-      <div style={{ marginTop: '120px' }}>
-        <h1 style={{ fontWeight: 'bold', marginBottom: '40px' }}>
-          YOUR COUNTRY
-        </h1>
+      <div style={{ margin: '120px 0 60px 0' }}>
         <StatisticsRow
           title={selectedCountryData ? selectedCountryData['Country'] : ''}
           data={selectedCountryData}
+          allCountriesData={allCountriesData}
+          setSelectedCountryData={setSelectedCountryData}
         />
       </div>
     </div>

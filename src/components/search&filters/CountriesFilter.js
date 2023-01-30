@@ -3,10 +3,7 @@
 import { Form } from 'react-bootstrap';
 
 export default function CountriesFilter(props) {
-  console.log('props.selectedCountryData', props.selectedCountryData);
-
   function yy(e) {
-    console.log('e', e.target.value);
     props.setSelectedCountryData(props.allCountriesData[e.target.value]);
   }
 

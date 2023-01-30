@@ -33,7 +33,9 @@ export default function StatisticsRow(props) {
 
         {/* Row Title */}
         <Col lg={8} sm={6} style={{ padding: '0' }}>
-          <h1 style={{ fontWeight: 'bold' }}>{props.title?.toUpperCase()}</h1>
+          <h1 style={{ fontWeight: 'bold' }}>
+            {props.title?.toUpperCase()} STATISTICS
+          </h1>
         </Col>
 
         {/* Countries Filter */}

@@ -6,6 +6,8 @@
 
 Simple Dashboard page for Corona virus statistics created using React library and [Coronavirus COVID19 API](https://cutt.ly/MLH5xKR).
 
+[Website Live Link](https://covid19-assignment.netlify.app/)
+
 ## Table of Contents
 
 - [Covid19](#covid19)
@@ -121,6 +123,8 @@ Covid19 git:(main)$ npm start
 - Design and Develop the Footer Component.
 - Add "Return to Top" button.
 - Create count up animation for the cards numbers.
+- Create loading component until fetching data.
+- Create API errors handler.
 
 ## Acknowledgements
 

@@ -60,49 +60,49 @@ List the ready features here:
 - User can navigate between dashboard sections (Global, Your Country, and Other Countries statistics).
 
 <div align="center">
-  <img src='./documentation_assets/Navigate%20Between%20Dashboard%20Sections.gif' alt='Navigate Between Dashboard Sections' width='75%'/>
+  <img src='https://user-images.githubusercontent.com/80676788/215826781-1a414013-676d-4060-a739-58c521ca9441.gif' alt='Navigate Between Dashboard Sections' width='75%'/>
 </div>
 <br />
 
 - User can view global statistics (cases, deaths, recovered).
 
 <div align="center">
-  <img src='./documentation_assets/Global%20Statistics.gif' alt='Global Statistics' width='75%'/>
+  <img src='https://user-images.githubusercontent.com/80676788/215827142-47c44347-c1a7-42c3-826a-6e8a36be1cdb.gif' alt='Global Statistics' width='75%'/>
 </div>
 <br />
 
 - User by default can view their country statistics (cases, deaths, recovered) based on their device IP.
 
 <div align="center">
-  <img src='./documentation_assets/Your%20Country%20Statistics.gif' alt='Your Country Statistics' width='75%'/>
+  <img src='https://user-images.githubusercontent.com/80676788/215827652-77cafa86-e9a6-4be7-adfe-2c1a722177a0.gif' alt='Your Country Statistics' width='75%'/>
 </div>
 <br />
 
 - User can search for countries statistics.
 
 <div align="center">
-  <img src='./documentation_assets/Search%20for%20Country.gif' alt='Search for Country' width='75%'/>
+  <img src='https://user-images.githubusercontent.com/80676788/215827854-5f3722e6-57cc-4c47-aeed-d0963181115d.gif' alt='Search for Country' width='75%'/>
 </div>
 <br />
 
 - User can view summary and table of statistics for all countries (cases, deaths, recovered).
 
 <div align="center">
-  <img src='./documentation_assets/Countries%20Statistics%20Summary%20and%20Table.gif' alt='Countries Statistics Summary and Table' width='75%'/>
+  <img src='https://user-images.githubusercontent.com/80676788/215844546-5d9ac8c5-46ef-48de-aa02-f15f41a2a2aa.gif' alt='Countries Statistics Summary and Table' width='75%'/>
 </div>
 <br />
 
 - User can sort countries in order (alphabetical, total cases, total deaths, or total recovered).
 
 <div align="center">
-  <img src='./documentation_assets/Countries%20Table%20Sorting.gif' alt='Countries Table Sorting' width='75%'/>
+  <img src='https://user-images.githubusercontent.com/80676788/215828033-6e18ea83-9fd1-478f-a88b-b1b348d3e22a.gif' alt='Countries Table Sorting' width='75%'/>
 </div>
 <br />
 
 ## Demo Video
 
 <div align="center">
-  <img src='./documentation_assets/Covid19%20App%20Demo.gif' alt='Covid19 App Demo' width='75%'/>
+  <img src='https://user-images.githubusercontent.com/80676788/215846347-0b441f2d-9056-4116-8d84-705f0ddf8296.gif' alt='Covid19 App Demo' width='75%'/>
 </div>
 <br />
 

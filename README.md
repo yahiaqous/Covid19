@@ -42,6 +42,7 @@ Simple Dashboard page for Corona virus statistics created using React library an
 <div align="center">
   <img src="./design/Dashboard%20Page%20Design.png" alt="Dashboard Page Design" width="75%"/>
 </div>
+
 ## Technologies Used
 
 - [React Library](https://reactjs.org) | A JavaScript library for building user interfaces.

@@ -91,10 +91,12 @@ export default function Home() {
   return (
     <div style={{ textAlign: 'center' }}>
       {/* Banner */}
-      <Banner />
+      <div>
+        <Banner />
+      </div>
 
       {/* Global Statistics */}
-      <div style={{ margin: '120px 0 60px 0' }}>
+      <div id='global' style={{ margin: '120px 0 60px 0' }}>
         <StatisticsRow title='GLOBAL' data={globalData} />
       </div>
 
@@ -105,7 +107,7 @@ export default function Home() {
         style={{ height: '400px' }}></img>
 
       {/* Your Country */}
-      <div style={{ margin: '120px 0 60px 0' }}>
+      <div id='your-country' style={{ margin: '120px 0 60px 0' }}>
         <h1 style={{ fontWeight: 'bold', marginBottom: '30px' }}>
           YOUR COUNTRY
         </h1>
@@ -119,7 +121,7 @@ export default function Home() {
       </div>
 
       {/* Other Countries */}
-      <div style={{ margin: '120px 0 60px 0' }}>
+      <div id='other-countries' style={{ margin: '120px 0 60px 0' }}>
         <h1 style={{ fontWeight: 'bold', marginBottom: '30px' }}>
           OTHER COUNTRIES
         </h1>

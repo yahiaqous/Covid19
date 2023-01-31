@@ -4,8 +4,16 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 
 const mainPages = [
   {
-    path: '#home',
-    name: 'Home',
+    path: '#global',
+    name: 'Global',
+  },
+  {
+    path: '#your-country',
+    name: 'Your Country',
+  },
+  {
+    path: '#other-countries',
+    name: 'Other Countries',
   },
 ];
 

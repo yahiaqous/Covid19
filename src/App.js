@@ -17,9 +17,6 @@ function App() {
 
       {/* Home Page */}
       <Home />
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }

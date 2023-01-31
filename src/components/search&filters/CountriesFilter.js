@@ -3,12 +3,12 @@
 import { Form } from 'react-bootstrap';
 
 export default function CountriesFilter(props) {
-  function yy(e) {
+  function changeCountry(e) {
     props.setSelectedCountryData(props.allCountriesData[e.target.value]);
   }
 
   return (
-    <Form.Select onChange={yy}>
+    <Form.Select onChange={changeCountry}>
       {Object.keys(props.allCountriesData).map((key) => (
         <option
           key={key}

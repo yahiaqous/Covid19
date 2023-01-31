@@ -32,23 +32,40 @@ export default function Home() {
       });
       setAllCountriesData(countriesDictionary);
 
-      countriesDictionary = sort_dictionary(countriesDictionary);
+      countriesDictionary = sortDictionary(countriesDictionary, 'cases');
       setAllCountriesDataSorted(countriesDictionary);
     });
   }
 
-  // https://stackoverflow.com/a/53530097
-  function sort_dictionary(obj) {
+  // How to sort dictionary based on value => https://stackoverflow.com/a/53530097
+  function sortDictionary(obj, sort_value) {
     let items = Object.keys(obj).map(function (key) {
       return [key, obj[key]];
     });
     items.sort(function (first, second) {
-      return (
-        second[1].TotalConfirmed +
-        second[1].NewConfirmed -
-        (first[1].TotalConfirmed + first[1].NewConfirmed)
-      );
+      if (sort_value === 'cases') {
+        return (
+          second[1].TotalConfirmed +
+          second[1].NewConfirmed -
+          (first[1].TotalConfirmed + first[1].NewConfirmed)
+        );
+      }
+      if (sort_value === 'deaths') {
+        return (
+          second[1].TotalDeaths +
+          second[1].NewDeaths -
+          (first[1].TotalDeaths + first[1].NewDeaths)
+        );
+      }
+      if (sort_value === 'recovered') {
+        return (
+          second[1].TotalRecovered +
+          second[1].NewRecovered -
+          (first[1].TotalRecovered + first[1].NewRecovered)
+        );
+      }
     });
+
     let sorted_dictionary = {};
     items.forEach(function (v) {
       let use_key = v[0];
@@ -120,7 +137,12 @@ export default function Home() {
 
       {/* Countries Table */}
       <div style={{ padding: '0', margin: '120px 60px 0 60px' }}>
-        <OtherCountriesTable allCountriesDataSorted={allCountriesDataSorted} />
+        <OtherCountriesTable
+          allCountriesData={allCountriesData}
+          allCountriesDataSorted={allCountriesDataSorted}
+          setAllCountriesDataSorted={setAllCountriesDataSorted}
+          sortDictionary={sortDictionary}
+        />
       </div>
     </div>
   );

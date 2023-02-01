@@ -104,7 +104,12 @@ export default function Home() {
       <img
         alt='Virus Mask GIF'
         src={CoronaMaskGIF}
-        style={{ height: '400px' }}></img>
+        style={{
+          maxWidth: '100%',
+          maxHeight: '400px',
+          width: 'auto',
+          height: 'auto',
+        }}></img>
 
       {/* Your Country */}
       <div id='your-country' style={{ margin: '120px 0 60px 0' }}>
@@ -135,7 +140,12 @@ export default function Home() {
       <img
         alt='Virus GIF'
         src={CoronaVirusGIF}
-        style={{ height: '400px' }}></img>
+        style={{
+          maxWidth: '100%',
+          maxHeight: '400px',
+          width: 'auto',
+          height: 'auto',
+        }}></img>
 
       {/* Countries Table */}
       <div style={{ padding: '0', margin: '120px 60px 0 60px' }}>

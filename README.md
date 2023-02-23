@@ -57,8 +57,6 @@ Simple Dashboard page for Corona virus statistics created using React library an
 
 ## Features
 
-List the ready features here:
-
 - User can navigate between dashboard sections (Global, Your Country, and Other Countries statistics).
 
 <div align="center">
